@@ -1,0 +1,210 @@
+/* Import Google Font - Montserrat */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #eff2f3;
+  text-align: center;
+  min-height: 100vh;
+}
+
+/* Header Styling */
+header {
+  padding: 30px 0;
+  background-color: #c8102e;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+button {
+  background-color: #eff2f3;
+  font-family: inherit;
+  font-size: 1.5rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+/* Home Page Styling */
+.homePageContainer,
+.contactPageContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.homePageContainer h2 {
+  font-size: 3rem;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}
+
+p {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+/* About Us Section */
+.about-us {
+  padding: 2rem;
+  text-align: center;
+}
+
+.about-us h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.about-us p {
+  font-size: 1.125rem;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+/* Menu Page Styling */
+.menuPageContainer {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.menuPageContainer h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Menu Grid for Responsive Layout */
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.menu-item {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s;
+}
+
+.menu-item:hover {
+  transform: scale(1.05);
+}
+
+.menu-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.menu-item h3 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+  color: #333;
+}
+
+.menu-item p {
+  font-size: 1rem;
+  margin: 10px;
+  color: #666;
+}
+
+.menu-item .price {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #c8102e;
+  margin-bottom: 15px;
+}
+
+/* Footer Styling */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  width: 100%;
+}
+
+/* Contact Page Specifics */
+.contact-info h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.contact-info p {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: #6c757d;
+}
+
+.map {
+  margin-top: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .menu-item img {
+    height: 150px;
+  }
+
+  .menu-section h2,
+  .menu-item h3 {
+    font-size: 1.25rem;
+  }
+
+  .menu-item p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .menu-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .menu-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .hero h2 {
+    font-size: 3rem;
+  }
+
+  .hero p {
+    font-size: 1.5rem;
+  }
+}
